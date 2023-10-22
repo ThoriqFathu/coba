@@ -9,7 +9,6 @@ pip install mecs
 ## Examplae Usage
 
 ```python
-# -*- coding: utf-8 -*-
 # import mecs package
 from mecs import Stem
 
