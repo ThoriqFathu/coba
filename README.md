@@ -1,12 +1,35 @@
-# MECS
-
 Deskripsi singkat proyek Python yang luar biasa.
 
+## Instalation
+
 ```bash
-pip install nama-proyek
+pip install mecs
 ```
 
+## Examplae Usage
+
 ```python
-def hello_world():
-    print("Hello, World!")
+# -*- coding: utf-8 -*-
+# import mecs package
+from mecs import Stem
+
+# Create stemmer
+st = Stem.Stemmer()
+
+# stem
+term = "kaadâ'anna"
+st.stemming(term)
+
+print("kata Dasar : ", st.lemma)
+# adâ'
+
+print("awalan : ", st.prefix)
+# ka
+
+print("akhiran : ", st.suffix)
+# anna
+
+print("nasal : ", st.nasal)
+# None
+
 ```
